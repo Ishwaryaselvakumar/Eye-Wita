@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eye Wita - Frequently Asked Questions</title>
+	<style>
+    header{
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+} 
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+  
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 40px;
+}
+  
+nav ul li:first-child{
+    margin-left: 0;
+}
+nav ul li a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+nav ul li a:hover{
+    color: #007bff;
+}
+		.question {
+			background-color: #f0f0f0;
+			border-radius: 10px;
+			margin: 10px;
+			padding: 10px;
+			cursor: pointer;
+		}
+
+		.answer {
+			display: none;
+			padding: 10px;
+			margin: 10px;
+			background-color: #fff;
+			border-radius: 10px;
+			animation-duration: 0.3s;
+			animation-name: slide-in;
+		}
+
+		@keyframes slide-in {
+			from { opacity: 0; transform: translateY(-10px); }
+			to { opacity: 1; transform: translateY(0); }
+		}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+	</style>
+</head>
+<body>
+	<header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">EYE WITA</a>
+                <ul>
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="aboutus.php">About Us</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="login_form.php" target="_blank">Log In</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+	<main>
+		<section>
+            <pre>
+
+
+
+
+            </pre>
+            <h1>Eye Wita - Frequently Asked Questions</h1>
+			<h2>General Questions</h2>
+			<div class="question" onclick="toggleAnswer('answer1')">
+				<p><strong>Q: What is Eye Wita?</strong></p>
+				<p id="answer1" class="answer">A: Eye Wita is a web application developed by Tamil Nadu Police Control Center to help citizens report traffic violations.</p>
+			</div>
+
+			<div class="question" onclick="toggleAnswer('answer2')">
+				<p><strong>Q: How do I download Eye Wita?</strong></p>
+				<p id="answer2" class="answer">A: You can download Eye Wita for free from the Google Play Store.</p>
+			</div>
+
+			<div class="question" onclick="toggleAnswer('answer3')">
+				<p><strong>Q: Is Eye Wita free to use?</strong></p>
+				<p id="answer3" class="answer">A: Yes, Eye Wita is completely free to use.</p>
+			</div>
+
+			<div class="question" onclick="toggleAnswer('answer4')">
+				<p><strong>Q: Can I use Eye Wita to report an emergency?</strong></p>
+				<p id="answer4" class="answer">A: No, Eye Wita is not intended to be used for emergency situations. If you are experiencing an emergency, please call the emergency helpline number 100.</p>
+			</div>
+
+			<div class="question" onclick="toggleAnswer('answer5')">
+				<p><strong>Q: What type of crimes can be reported using Eye Wita?</strong></p>
+				<p id="answer5" class="answer">A: Eye Wita can be used to report any type of traffic violation, like DUI, Without Helmet by Rider, Hit and Run, Driving on wrong side of road, etc.</p>
+			</div>
+		</section>
+        <section>
+			<h2>Reporting a Crime</h2>
+				<div class="question" onclick="toggleAnswer('answer6')">
+                    <p><strong> Q: Will my identity be revealed when I report a crime using Eye Wita?</strong></p>
+                    <p id="answer6" class="answer">A: No, your identity will be kept confidential when you report a crime using Eye Wita.</p>
+                </div>
+                    <div class="question" onclick="toggleAnswer('answer7')">
+                    <p><strong> Q: How can I track the status of my report?</strong></p>
+				<p id="answer7"class="answer">A: Eye Wita allows you to track the status of your report using the unique reference number provided when you submit a report.</p>
+                </div>
+				<div class="question" onclick="toggleAnswer('answer8')">
+                <p><strong>  Q: Can I submit multiple complaints using Eye Wita?</strong></p>
+				<p id="answer8"class="answer">A: Yes, you can submit multiple complaints using Eye Wita. There is no limit to the number of complaints you can file, but we encourage users to only report genuine incidents and refrain from misusing.</p>
+            </div>
+			<div class="question" onclick="toggleAnswer('answer9')">
+				<p><strong> Q: What should I do if I receive a fake complaint through EYE WITA?</strong></p>
+				<p id="answer9"class="answer">A:Eye Wita takes false complaints seriously and investigates them thoroughly. If you receive a fake complaint, you can report it to the Eye Wita team through the the toll free no. 1800 701 57944 We will take appropriate action against the person responsible for filing the false complaint. </p>
+			</div>
+            </section>
+	</main>
+	<script>
+		function toggleAnswer(id) {
+			var answer = document.getElementById(id);
+			if (answer.style.display === "none") {
+				answer.style.display = "block";
+			} else {
+				answer.style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
+
+		
