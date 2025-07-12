@@ -64,10 +64,6 @@
 - 📱 Android/iOS mobile app
 - 🤖 AI/ML for validating media evidence
 
-## 📸 Screenshots
-
-_Add UI screenshots from your project demo here if available._
-
 ## 👩‍💻 Author
 
 **Ishwarya S**  
